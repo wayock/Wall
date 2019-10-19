@@ -11,7 +11,9 @@ utitlizing Node.js, Express, EJS, PostgresSQL, Sequelize, Javascript, Bootstrap 
 
 ### Run & Testing
 `git clone https://github.com/wayock/wall.git`
+
 `cd wall`
+
 `npm install`
 
 To run the web application, install the dependences listed below with the `npm start` command.  Testing is done through Jasmine,
