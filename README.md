@@ -10,8 +10,13 @@ The Wall web application allows users to read posts and create posts on a websit
 utitlizing Node.js, Express, EJS, PostgresSQL, Sequelize, Javascript, Bootstrap to create posts. 
 
 ### Run & Testing
+`git clone https://github.com/wayock/wall.git
+cd wall
+npm install`
+
 To run the web application, install the dependences listed below with the `npm start` command.  Testing is done through Jasmine,
 Jasmine testing can be run throught the `npm test` command.  
+
 
 ### Dependencies to Install
   - Install Node.js https://nodejs.org/en/download/package-manager/
