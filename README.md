@@ -2,7 +2,7 @@
 
 
 ### Coding Challenge
-Create an application in which a user can post to a wall and read other comments posted on the wall.
+In 90 minutes create an application in which a user can post to a wall and read other comments posted on the wall.
 
 ### Solution
 
