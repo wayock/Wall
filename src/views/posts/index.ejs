@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../static/partials/head.ejs %>
+  </head>
+  <body>
+
+    <main class="container">
+      <% include ../static/partials/navbar.ejs %>
+
+      <header class="jumbotron my-4">
+        <h1 class="display-3">Welcome to the Wall</h1>
+        <h3 class="lead">A place to share.</h3>
+
+      </header>
+      <section class="container col-md-12 col-md-offset-1 border  rounded p-3 mb-2 bg-secondary text-white"">
+        <h3>Posts</h3>
+          <a href="/posts/new" class="btn btn-primary ">Create New Post</a>
+        <ul class="list-group">
+
+          <% posts.forEach((post) => { %>
+
+            <li class="list-group-item text-dark">
+              <a href="/posts/<%= post.id %>"> <%= post.title %> </a>
+              <br>
+              <%= post.description %>
+              <form style="display:initial" action="/posts/<%= post.id %>/destroy" method="post">
+                <button type="submit" class="btn btn-secondary">X</button>
+              </form>
+
+            </li>
+          <% }) %>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

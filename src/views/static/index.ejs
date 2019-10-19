@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ./partials/head.ejs %>
+  </head>
+  <body>
+
+     <% include ./partials/navbar.ejs %>
+
+      <!-- Page Content -->
+      <main class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron my-4">
+          <h1 class="display-3">Welcome to the Wall</h1>
+          <h3 class="lead">A place to share.</h3>
+
+        </header>
+        <h3>Posts</h3>
+
+        <a href="/posts/new" class="btn btn-success">New Post</a>
+
+
+        <ul class="list-group">
+          <% posts.forEach((post) => { %>
+            <li class="list-group-item">
+              <a href="/posts/<%= post.id %>">
+                <%= post.title %>
+                <%= post.description %>
+              </a> 
+            </li>
+
+
+          <% }) %>
+        </ul>
+      </main>
+      <!-- /.container -->
+
+      <% include ./partials/baseScripts.ejs %>
+    </body>
+</html>
